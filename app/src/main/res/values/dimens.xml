@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--fragment_slider-->
+    <dimen name="fragment_main_slider_height">200sp</dimen>
+
+
+    <!--toolbar_main-->
+    <dimen name="toolbar_main_height">56dp</dimen>
+
+
+    <!--navigation bar-->
+    <dimen name="navigation_cover_height">150sp</dimen>
+
+
+    <!--item fragment main news-->
+    <dimen name="item_fragment_main_posts_height">160dp</dimen>
+    <dimen name="item_fragment_main_posts_width">200dp</dimen>
+
+    <dimen name="item_fragment_main_games_height">120dp</dimen>
+    <dimen name="item_fragment_main_games_width">100dp</dimen>
+
+
+    <!--font size-->
+    <dimen name="font_size_very_small">9dp</dimen>
+    <dimen name="font_size_small">12dp</dimen>
+    <dimen name="font_size_medium">15dp</dimen>
+    <dimen name="font_size_large">16dp</dimen>
+    <dimen name="font_size_very_large">20dp</dimen>
+
+    <!--item list games-->
+    <dimen name="item_list_games_height">120dp</dimen>
+
+    <dimen name="item_list_games_image_height">120dp</dimen>
+    <dimen name="item_list_games_image_width">100dp</dimen>
+
+
+
+
+    <!--show product detail-->
+    <dimen name="photo_cover_height">120</dimen>
+    <dimen name="photo_cover_width">100</dimen>
+
+    <dimen name="photo_main_height">600</dimen>
+    <dimen name="photo_main_width">500</dimen>
+
+    <dimen name="show_detail_media_height">260dp</dimen>
+
+
+    <dimen name="buttonsTextSize">11dp</dimen>
+
+
+
+</resources>

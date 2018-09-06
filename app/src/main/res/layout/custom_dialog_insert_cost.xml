@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_dialog_finance_alert"
+    android:gravity="center"
+
+    >
+
+    <EditText
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:hint="عنوان"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/back_dialog_finance_alert_edittext"
+        />
+
+    <Spinner
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/back_dialog_finance_alert_edittext"
+        />
+
+    <EditText
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:hint="توضیحات"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/back_dialog_finance_alert_edittext"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/back_alert_cancel"
+            android:text="لغو"
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/font_size_medium"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/back_alert_ok"
+            android:text="تایید"
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/font_size_medium"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
