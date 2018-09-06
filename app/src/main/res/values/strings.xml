@@ -3,4 +3,19 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+
+    <string name="type_choose">نوع هزینه یا درآمد خود را تعیین کنید</string>
+    <string-array name="cost_types">
+        <item>پوشاک</item>
+        <item>مواد غذایی</item>
+        <item>تفریح</item>
+        <item>ابزارآلات</item>
+        <item>ابزار الکترونیکی</item>
+        <item>سفر</item>
+        <item>ورزش</item>
+        <item>حقوق ماهیانه</item>
+    </string-array>
 </resources>

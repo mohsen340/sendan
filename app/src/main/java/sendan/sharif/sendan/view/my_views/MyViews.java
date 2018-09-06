@@ -25,24 +25,24 @@ public class MyViews extends AppCompatActivity {
   }
 
 
-//  public static void makeText(AppCompatActivity appCompatActivity, CharSequence text, int duration){
-//
-//   // Activity activity=appCompatActivity;
-//    //Context context=appCompatActivity;
-//    //AppCompatActivity appCompatActivity=context;
-//    ContextWrapper contextWrapper=new ContextWrapper(appCompatActivity);
-//    LayoutInflater inflater= appCompatActivity.getLayoutInflater();
-//    View layout = inflater.inflate(R.layout.toast,
-//      (ViewGroup) appCompatActivity.findViewById(R.id.lyt_toast));
-//    TextView txt_toast_text = (TextView) layout.findViewById(R.id.txt_toast_text);
-//    txt_toast_text.setText(text);
-//
-//    Toast toast = new Toast(contextWrapper.getApplicationContext());
-//    toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
-//    toast.setDuration(Toast.LENGTH_LONG);
-//    toast.setView(layout);
-//    toast.show();
-//  }
+  public static void makeText(AppCompatActivity appCompatActivity, CharSequence text, int duration){
+
+   // Activity activity=appCompatActivity;
+    //Context context=appCompatActivity;
+    //AppCompatActivity appCompatActivity=context;
+    ContextWrapper contextWrapper=new ContextWrapper(appCompatActivity);
+    LayoutInflater inflater= appCompatActivity.getLayoutInflater();
+    View layout = inflater.inflate(R.layout.custom_view_toast,
+      (ViewGroup) appCompatActivity.findViewById(R.id.lyt_toast));
+    TextView txt_toast_text = (TextView) layout.findViewById(R.id.txt_toast_text);
+    txt_toast_text.setText(text);
+
+    Toast toast = new Toast(contextWrapper.getApplicationContext());
+    toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+    toast.setDuration(Toast.LENGTH_LONG);
+    toast.setView(layout);
+    toast.show();
+  }
 
   public static Typeface getIranSansFont(Context context){
     return Typeface.createFromAsset(context.getAssets(), "fonts/IRAN_Sans.ttf");
