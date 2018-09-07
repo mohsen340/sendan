@@ -8,13 +8,19 @@
     android:orientation="vertical">
 
 
+    <include layout="@layout/toolbar_public"/>
+
+
+
 
 
 
         <FrameLayout
             android:id="@+id/lyt_action"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
 
 
 
@@ -39,11 +45,11 @@
             android:layout_weight="0.3"
             android:layout_height="match_parent"
             android:background="@drawable/back_buttons_menu_ripple_effect"
-            android:drawableTop="@drawable/ic_email"
+            android:drawableTop="@drawable/ic_home"
             android:text="پروفایل"
             android:padding="2dp"
             android:textColor="@color/buttonsTextColor"
-            android:textSize="@dimen/font_size_large"
+            android:textSize="@dimen/font_size_medium"
             />
         <!--android:drawableTop="@drawable/ic_login"-->
 
@@ -52,7 +58,7 @@
             android:layout_height="match_parent"
             android:layout_marginBottom="3dp"
             android:layout_marginTop="3dp"
-            android:background="#8f8080"/>
+            android:background="#448f8080"/>
 
         <Button
             android:id="@+id/btn_suggest"
@@ -62,16 +68,16 @@
             android:background="@drawable/back_buttons_menu_ripple_effect"
             android:text="پیشنهادات"
             android:padding="2dp"
-            android:drawableTop="@drawable/ic_email"
+            android:drawableTop="@drawable/ic_offer"
             android:textColor="@color/buttonsTextColor"
-            android:textSize="@dimen/font_size_large"
+            android:textSize="@dimen/font_size_medium"
             />
 
 
         <TextView
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="#8f8080"
+            android:background="#448f8080"
             android:layout_marginBottom="3dp"
             android:layout_marginTop="3dp"/>
 
@@ -85,14 +91,14 @@
             android:text="گزارش"
             android:padding="2dp"
             android:textColor="@color/buttonsTextColor"
-            android:textSize="@dimen/font_size_large"
-            android:drawableTop="@drawable/ic_email"
+            android:textSize="@dimen/font_size_medium"
+            android:drawableTop="@drawable/ic_report"
             />
 
         <TextView
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="#8f8080"
+            android:background="#448f8080"
             android:layout_marginBottom="3dp"
             android:layout_marginTop="3dp"/>
 
@@ -105,8 +111,8 @@
             android:text="مالی"
             android:padding="2dp"
             android:textColor="@color/buttonsTextColor"
-            android:textSize="@dimen/font_size_large"
-            android:drawableTop="@drawable/ic_email"/>
+            android:textSize="@dimen/font_size_medium"
+            android:drawableTop="@drawable/ic_finance"/>
 
     </LinearLayout>
 

@@ -1,0 +1,103 @@
+<android.support.design.widget.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    >
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/collapsing_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:contentScrim="@color/colorPrimaryDark"
+
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        >
+        <!--app:expandedTitleMarginEnd="64dp"-->
+        <!--app:expandedTitleMarginStart="48dp"-->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            tools:context=".view.fragment.FragmentFinance"
+            android:orientation="vertical"
+            app:layout_collapseMode="parallax"
+            android:fitsSystemWindows="true"
+            >
+
+            <TextView
+                android:id="@+id/txt_insert_trans"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#333333"
+                android:textSize="@dimen/font_size_very_large"
+                android:textStyle="bold"
+                android:text="تراکنش جدید دارید؟ ثبت کنید"
+                android:layout_gravity="center_vertical"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/btn_cost"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="100dp"
+                    android:background="@drawable/back_finance_cost_text"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="60dp"
+                    android:text="هزینه"
+                    android:textSize="@dimen/font_size_very_large"
+                    android:textColor="@color/main_text_color"
+                    android:drawableBottom="@drawable/ic_minus"
+                    android:paddingBottom="20dp"/>
+
+                <Button
+                    android:id="@+id/btn_income"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="100dp"
+                    android:background="@drawable/back_finance_income"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="60dp"
+                    android:text="درآمد"
+                    android:textSize="@dimen/font_size_very_large"
+                    android:textColor="@color/main_text_color"
+                    android:drawableBottom="@drawable/ic_plus"
+                    android:paddingBottom="20dp"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txt_transactions"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:textColor="#333333"
+                android:textSize="@dimen/font_size_very_large"
+                android:textStyle="bold"
+                android:text="آخرین تراکنش ها"
+                android:layout_gravity="center_vertical"
+                />
+
+
+        </LinearLayout>
+    </android.support.design.widget.CollapsingToolbarLayout>
+</android.support.design.widget.AppBarLayout>

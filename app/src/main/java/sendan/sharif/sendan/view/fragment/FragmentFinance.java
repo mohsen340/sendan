@@ -21,7 +21,7 @@ public class FragmentFinance extends Fragment {
 
   View view;
   Button btn_income, btn_cost;
-  TextView txt_transactions;
+  TextView txt_transactions, txt_insert_trans;
   Dialog dialog;
   //dialog buttons
   Button btn_ok, btn_cancel;
@@ -50,6 +50,7 @@ public class FragmentFinance extends Fragment {
 
 
     txt_transactions = view.findViewById(R.id.txt_transactions);
+    txt_insert_trans = view.findViewById(R.id.txt_insert_trans);
 
 
     //add dialog feature
@@ -57,7 +58,7 @@ public class FragmentFinance extends Fragment {
     dialog.setContentView(R.layout.custom_dialog_insert_cost);
     btn_ok = dialog.findViewById(R.id.btn_ok);
     btn_cancel = dialog.findViewById(R.id.btn_cancel);
-//    dialog.setTitle("");
+//    dialog.setTitle("مقدار را درج کنید");
     btn_ok.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
@@ -65,10 +66,11 @@ public class FragmentFinance extends Fragment {
       }
     });
 
-    btn_ok.setOnClickListener(new View.OnClickListener() {
+    btn_cancel.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
         dialog.dismiss();
+//        dialog.cancel();
       }
     });
 
@@ -76,6 +78,7 @@ public class FragmentFinance extends Fragment {
     btn_income.setTypeface(MyViews.getIranSansUltraLightFont(getContext()));
     btn_cost.setTypeface(MyViews.getIranSansUltraLightFont(getContext()));
     txt_transactions.setTypeface(MyViews.getIranSansBoldFont(getContext()));
+    txt_insert_trans.setTypeface(MyViews.getIranSansBoldFont(getContext()));
 
     return view;
   }

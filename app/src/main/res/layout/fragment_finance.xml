@@ -1,75 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.fragment.FragmentFinance"
     android:orientation="vertical"
     >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="30dp"
-        android:layout_marginTop="100dp">
-
-        <Button
-            android:id="@+id/btn_cost"
-            android:layout_width="0dp"
-            android:layout_weight="0.5"
-            android:layout_height="100dp"
-            android:background="@drawable/back_finance_cost_text"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="60dp"
-            android:text="ثبت هزینه"
-            android:textSize="@dimen/font_size_very_large"
-            android:textColor="@color/main_text_color"/>
-
-        <Button
-            android:id="@+id/btn_income"
-            android:layout_width="0dp"
-            android:layout_weight="0.5"
-            android:layout_height="100dp"
-            android:background="@drawable/back_finance_income"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="60dp"
-            android:text="ثبت درآمد"
-            android:textSize="@dimen/font_size_very_large"
-            android:textColor="@color/main_text_color"/>
-
-    </LinearLayout>
 
 
-    <TextView
-        android:id="@+id/txt_transactions"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginBottom="10dp"
-        android:textColor="#333333"
-        android:textSize="@dimen/font_size_very_large"
-        android:textStyle="bold"
-        android:text="آخرین تراکنش ها"
-        android:layout_gravity="center_vertical"
-        />
+   <include layout="@layout/part_finance_head"/>
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="?attr/actionBarSize">
-    <ScrollView
+
+
+
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#e8e8e8"
         android:padding="3dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        android:clickable="true"
 
-        android:layout_margin="8dp">
+        >
 
         <LinearLayout
+            android:clickable="true"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -295,18 +257,17 @@
 
 
 
-    </ScrollView>
+    </android.support.v4.widget.NestedScrollView>
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
-            android:src="@drawable/ic_question"
-            android:layout_marginLeft="10dp"/>
-
-    </RelativeLayout>
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:src="@drawable/ic_question"-->
+    <!--android:layout_marginLeft="10dp"/>-->
 
 
 
-</LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

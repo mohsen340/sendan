@@ -33,6 +33,18 @@ dependencies {
     }
 
 
+//    implementation 'com.github.AnyChart:AnyChart-Android:1.0.2'
+
+
+//    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+
+//    implementation 'com.github.lecho:hellocharts-library:1.5.8@aar'
+
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+
+
+
 
 
 }

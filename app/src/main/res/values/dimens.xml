@@ -23,7 +23,7 @@
     <!--font size-->
     <dimen name="font_size_very_small">9dp</dimen>
     <dimen name="font_size_small">12dp</dimen>
-    <dimen name="font_size_medium">15dp</dimen>
+    <dimen name="font_size_medium">12dp</dimen>
     <dimen name="font_size_large">16dp</dimen>
     <dimen name="font_size_very_large">20dp</dimen>
 

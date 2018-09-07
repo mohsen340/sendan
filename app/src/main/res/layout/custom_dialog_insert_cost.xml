@@ -4,11 +4,12 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back_dialog_finance_alert"
     android:gravity="center"
     android:padding="30dp"
 
     >
+
+
 
     <EditText
         android:layout_margin="5dp"
@@ -34,7 +35,7 @@
         android:layout_height="30dp"
         android:layout_margin="5dp"
         android:padding="2dp"
-        android:hint="قیمت"
+        android:hint="مقدار"
         android:background="@drawable/back_dialog_finance_alert_edittext"
         />
 
